@@ -1,0 +1,28 @@
+#include<stdio.h>
+int arms(int n);                       //Function Prototype
+int rem,sum;
+void main()                            //Main Function	                           
+{ 
+ int n=0,temp=0,temp1=0;
+ printf("Enter The Number To Check If Is It Armstrong Or Not\n");
+ scanf("%d",&n);
+ temp=n;
+ temp1=arms(n);
+ if (temp==temp1) 
+   printf("It Is A Armstrong Number\n");
+ else 
+   printf("It Is Not A Armstrong Number\n");
+}
+int arms(int n)                       //Function Definition
+{
+ while(n!=0)
+ {
+  rem=n%10;
+  sum+=rem*rem*rem;
+  n/=10;
+ }
+return(sum);
+}
+
+           
+
