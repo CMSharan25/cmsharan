@@ -1,0 +1,24 @@
+#include<stdio.h>
+void main()
+{
+int cno=0;
+float units=0,charg=0;
+printf("Enter The No Of Units Used And The Costumer ID\n");
+scanf("%f",&units);
+scanf("%d",&cno);
+if(units<=200)
+ { 
+  charg=0.5*units;
+ }
+else if(units<=400)
+ {
+  charg=100+0.6*(units-200);
+ }
+else if(units<=600)
+ {
+  charg=230+0.8*(units-400);
+ }
+else
+ charg=390+0.9*(units-600);
+printf("The Costumer ID --> %d\nThe Charge Is -->%.2f",cno,charg);
+}
