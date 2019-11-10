@@ -1,0 +1,12 @@
+n=input()
+num=int(n)
+temp=num
+while temp > 0:
+   i=num-temp
+   i=i*i
+   print(i)
+   temp=temp-1
+
+
+    
+    
