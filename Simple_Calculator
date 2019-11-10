@@ -1,0 +1,57 @@
+#include<stdio.h>
+void Add();                                  //Function Prototype
+void Sub();
+void Mul();
+void Div();
+int n,m;                                               
+void main()                                  //Main Fuction
+{ 
+  int ch;
+  printf("Enter The Choice\n1.Addtion\n2.Substration\n
+           3.Mutiplication\n4.Division\n");
+  scanf("%d",&ch);
+  switch(ch)
+  {
+    case 1:  Add();
+             break;
+    case 2:  Sub();
+             break;
+    case 3:  Mul();
+             break;
+    case 4:  Div();
+             break;
+    default: printf("Enter A Valid Option\n");
+  }
+}  
+void Add()                       //Function Definition For Addition
+{ 
+  int sum=0;
+  printf("Enter Two Numbers For Addition\n");
+  scanf("%d %d",&n,&m);
+  sum=n+m;
+  printf("The Sum Of Two Numbers Is---->>>%d",sum);
+}
+void Sub()                       //Function Definition For Substration
+{ 
+  int diff=0;
+  printf("Enter Two Numbers For Substration\n");
+  scanf("%d %d",&n,&m);
+  diff=n-m;
+  printf("The Difference Of Two Numbers Is---->>>%d",diff);
+}
+void Mul()                        //Function Definition For Mutlipication
+{ 
+  int pro=0;
+  printf("Enter Two Numbers For Mutlipication\n");
+  scanf("%d %d",&n,&m);
+  pro=n*m;
+  printf("The Product Of Two Numbers Is---->>>%d",pro);
+}  
+void Div()                        //Function Definition For Division
+{ 
+  float div1=0;
+  printf("Enter Two Numbers For Division\n");
+  scanf("%d %d",&n,&m);
+  div1=n/m;
+  printf("The Sum Of Two Numbers Is---->>>%f",div1);
+} 
