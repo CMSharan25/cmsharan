@@ -1,0 +1,23 @@
+#include<stdio.h>
+void SumInt(int n);                 //Function Prototype
+void main()                         //Main Function
+{ 
+ int n;
+ printf("Enter The Number To Find The Sum Of-->>");     
+ scanf("%d",&n);
+ SumInt(n);
+}
+void SumInt(int n)                  //Function Definition
+{
+ int sum=0;
+ for(int i=0;i<=n;i++)
+ { 
+   sum+=i;
+ }
+ printf("The Sum Is------>>>%d",sum);
+}
+
+
+   
+           
+
