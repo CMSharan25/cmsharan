@@ -1,0 +1,27 @@
+#include<stdio.h>
+void main()
+{
+float time=0;
+printf("Enter The Time To Check In 24-Hour Format\n");
+scanf("%f",&time);
+if(time>=0 && time<=11.59)
+ {
+  printf("GOOD MORNING\n");
+ }
+else if(time>=12 && time<=15.59)
+ {
+  printf("GOOD AFTERNOON\n");
+ }
+else if(time>=16 && time<=19.59)
+ {
+  printf("GOOD EVENING\n");
+ }
+else if(time>=20 && time<=24.59)
+ {
+  printf("GOOD NIGHT\n");
+ }
+else
+ {
+  printf("Enter Number Out of Time Range\n");
+ }
+}
