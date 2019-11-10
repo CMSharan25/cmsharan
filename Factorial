@@ -1,0 +1,25 @@
+#include<stdio.h>
+void fact(int n);                    //Fuction Prototype
+void main()                          //Main Function
+{
+ int n;
+ printf("Enter The Number To Find The Factorial\n");
+ scanf("%d",&n);
+ fact(n);
+}
+void fact(int n)                    //Function Definition
+{ 
+  int fact1;
+  for(int i=1;i<=n;i++)
+  { 
+    fact1*=i;
+  }
+  printf("Factorial Of The Entered Number Is-->>>%d",fact1);
+}
+
+
+
+
+   
+           
+
