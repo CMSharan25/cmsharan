@@ -1,0 +1,29 @@
+#include<stdio.h>
+int palin(int n);                         //Function Prototype
+int rem,rev;                              
+void main()                               //Main Function
+{
+ int n,temp,temp1;
+ printf("Enter The Number To Check For Palindrome--->>\n");
+ scanf("%d",&n);
+ temp=n;
+ temp1=palin(n);
+ if (temp==temp1) 
+    printf("It Is A Palindrome Number\n");
+ else 
+    printf("It Is Not A Palindrome Number\n");
+}
+int palin(int n)                         //Function Definition
+{
+   while(n!=0)
+   {
+    rem=n%10;
+    rev=rev*10+rem;
+    n/=10;
+   }
+return (rev);
+}
+
+
+           
+
