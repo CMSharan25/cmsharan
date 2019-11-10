@@ -1,0 +1,18 @@
+#include<stdio.h>
+void main()
+{ 
+int ans;
+printf("Enter The Charecter \n Type Y(Yes) Or N(No)");
+ans=getchar();
+if(ans=='Y'|| ans=='y')
+{
+printf(" The Enter answer is -->>");
+putchar(ans);
+printf("\nYes You Are Done For Now \n");
+}
+else
+{
+printf("You Are Good For Nothing \n");
+}
+}
+
